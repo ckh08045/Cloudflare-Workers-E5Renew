@@ -112,7 +112,7 @@ async function handleCallback(request) {
       "redirect_uri": MS_REDIRECT_URI,
       "scope": MS_SCOPE,
       "code": new URL(request.url).searchParams.get("code"),
-      "grant_type": "authorization_code"
+      "grant_type": "client_credentials"
     }),
   });
 
