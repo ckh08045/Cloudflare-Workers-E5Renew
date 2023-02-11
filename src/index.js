@@ -200,6 +200,11 @@ async function randomFetchMSApi() {
   return await fetchMSApi(MS_GRAPH_API_LIST[index]);
 }
 
+async function randomFetchMSApi2() {
+  const index = randomInt*2(0, MS_GRAPH_API_LIST.length);
+  return await fetchMSApi(MS_GRAPH_API_LIST[index]);
+}
+
 async function fetchMSApi(url) {
   const accessToken = await getAccessToken();
   if (accessToken === null) {
